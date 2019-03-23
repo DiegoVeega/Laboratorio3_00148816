@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context=".NewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/principal_gap">
 
-    <TextView
-        android:id="@+id/tv_prueba"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Texto Prueba" />
+        android:padding="@dimen/content_gap">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_username"
+            android:textSize="@dimen/standar_option_textS"/>
+
+        <TextView
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_alignBaseline="@+id/tv_user"
+            android:layout_toRightOf="@+id/tv_user"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_gap">
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_password"
+            android:textSize="@dimen/standar_option_textS"/>
+
+        <TextView
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_alignBaseline="@+id/tv_pass"
+            android:layout_toRightOf="@+id/tv_pass"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_gap">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_email"
+            android:textSize="@dimen/standar_option_textS"/>
+
+        <TextView
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_alignBaseline="@+id/tv_email"
+            android:layout_toRightOf="@+id/tv_email"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/content_gap">
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_gender"
+            android:textSize="@dimen/standar_option_textS"/>
+
+        <TextView
+            android:id="@+id/et_gender"
+            android:layout_width="wrap_content"
+            android:layout_alignBaseline="@+id/tv_gender"
+            android:layout_toRightOf="@+id/tv_gender"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standar_option_textS"/>
+
+    </RelativeLayout>
 
     <Button
-        android:id="@+id/bt_actionnew"
+        android:id="@+id/share_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="compartir"/>
+        android:text="@string/action_share"
+        android:drawableLeft="@drawable/share_icon"
+        android:drawablePadding="@dimen/content_gap"/>
 
 </LinearLayout>

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Laboratorio3_00148816</string>
+    <string name="hint_your_user">Your Username</string>
+    <string name="hint_your_pass">Your Password</string>
+    <string name="hint_your_email">Your E-mail</string>
+    <string name="hint_your_gender">Your Gender</string>
+    <string name="text_username">Username:</string>
+    <string name="text_password">Password:</string>
+    <string name="text_email">E-mail:</string>
+    <string name="text_gender">Gender:</string>
+    <string name="action_share">Share</string>
 </resources>

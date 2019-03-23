@@ -3,18 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/principal_gap">
 
     <TextView
+        android:id="@+id/tv_shareActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SHARE ACTIVITY"
-        android:textSize="40sp"/>
+        android:textSize="40sp"
+        android:padding="@dimen/content_gap"/>
 
     <TextView
-        android:id="@+id/share"
+        android:id="@+id/tv_shared"
+        android:padding="@dimen/content_gap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Texto Quemado"/>
+        android:textSize="@dimen/standar_option_textS"
+        android:textColor="#666"/>
 
 </LinearLayout>

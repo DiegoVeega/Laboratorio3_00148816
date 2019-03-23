@@ -9,42 +9,49 @@ import android.widget.TextView;
 
 public class NewActivity extends AppCompatActivity {
 
-    TextView mText1;
-    Button mSUbmitACtion;
-    String text_aux;
+    TextView mtv_user, mtv_pass,mtv_email,mtv_gender;
+    Button mShareButton;
+    String Aux_Text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
 
-        mText1 = findViewById(R.id.tv_prueba);
-        mSUbmitACtion = findViewById(R.id.bt_actionnew);
+        mtv_user =findViewById(R.id.tv_user);
+        mtv_pass=findViewById(R.id.tv_pass);
+        mtv_email=findViewById(R.id.tv_email);
+        mtv_gender=findViewById(R.id.tv_gender);
 
-        text_aux = "Texto Quemado";
+        mShareButton=findViewById(R.id.share_action);
 
         Intent m_newintent = getIntent();
 
         if(m_newintent != null){
-            //mText1.setText(m_newintent.getStringExtra(AppConstant.Text1_key));
-            text_aux=m_newintent.getStringExtra(AppConstant.Text1_key);
+            //mText1.setText(m_newintent.getStringExtra(AppConstant.Text1_key)); Setea el texto en el lugar asignado.
+            //text_aux=m_newintent.getStringExtra(AppConstant.Text1_key);
+
+            mtv_user.setText(m_newintent.getStringExtra(AppConstant.USER_KEY));
+            mtv_pass.setText(m_newintent.getStringExtra(AppConstant.PASS_KEY));
+            mtv_email.setText(m_newintent.getStringExtra(AppConstant.EMAIL_KEY));
+            mtv_gender.setText(m_newintent.getStringExtra(AppConstant.GENDER_KEY));
         }
 
-        mText1.setText(text_aux);
-        mSUbmitACtion.setOnClickListener(new View.OnClickListener() {
+        mShareButton.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View v) {
-                Intent mintent2 = new Intent();
+                Intent m_intent2 = new Intent();
 
-                mintent2.setAction(Intent.ACTION_SEND);
-                mintent2.setType("text/plain");
+                Aux_Text= "Username: "+mtv_user.getText()+"\n"+"Password: "+mtv_pass.getText()+"\n"+"E-mail: "+mtv_email.getText()+"\n"+"Gender: "+mtv_gender.getText();
+                m_intent2.setAction(Intent.ACTION_SEND);
+                m_intent2.setType("text/plain");
+                m_intent2.putExtra(Intent.EXTRA_TEXT, Aux_Text);
 
-                mintent2.putExtra(Intent.EXTRA_TEXT, text_aux);
-
-                startActivity(mintent2);
-
+                startActivity(m_intent2);
             }
         });
 
     }
+
 }

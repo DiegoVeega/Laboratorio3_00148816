@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/principal_gap">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_margin="@dimen/content_gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_user"
+        android:drawableLeft="@drawable/name_icon"
+        android:drawablePadding="@dimen/content_gap"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_margin="@dimen/content_gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_pass"
+        android:drawableLeft="@drawable/pass_icon"
+        android:drawablePadding="@dimen/content_gap"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_margin="@dimen/content_gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_email"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="@dimen/content_gap" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_margin="@dimen/content_gap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_gender"
+        android:drawableLeft="@drawable/gender_icon"
+        android:drawablePadding="@dimen/content_gap"/>
 
     <Button
         android:id="@+id/bt_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit">
+        android:text="submit"
+        android:layout_margin="@dimen/content_gap"
+        android:drawableLeft="@drawable/submit_icon"
+        android:drawablePadding="@dimen/content_gap">
 
     </Button>
 

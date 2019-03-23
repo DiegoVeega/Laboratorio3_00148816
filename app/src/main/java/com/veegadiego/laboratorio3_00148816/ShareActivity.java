@@ -8,28 +8,23 @@ import android.widget.TextView;
 
 public class ShareActivity extends AppCompatActivity {
 
-
+    private String Aux_Text;
     TextView mSharedText;
 
-    private String text_aux;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
 
-        mSharedText=findViewById(R.id.share);
+        mSharedText=findViewById(R.id.tv_shared);
 
-        text_aux = "ESto es un texto quemado";
+        Intent Intent_shared = getIntent();
 
-        Intent new_intent = getIntent();
-
-        if(new_intent != null){
-            text_aux = new_intent.getStringExtra(Intent.EXTRA_TEXT);
-
-
+        if(Intent_shared != null){
+            Aux_Text = Intent_shared.getStringExtra(Intent.EXTRA_TEXT);
         }
 
-        mSharedText.setText(text_aux);
+        mSharedText.setText(Aux_Text);
     }
 }

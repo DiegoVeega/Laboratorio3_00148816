@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="principal_gap">8dp</dimen>
+    <dimen name="content_gap">10dp</dimen>
+    <dimen name="standar_option_textS">18sp</dimen>
+</resources>
