@@ -18,7 +18,7 @@ public class ShareActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
 
-        mSharedText.findViewById(R.id.share);
+        mSharedText=findViewById(R.id.share);
 
         text_aux = "ESto es un texto quemado";
 
