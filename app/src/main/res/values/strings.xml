@@ -9,4 +9,5 @@
     <string name="text_email">E-mail:</string>
     <string name="text_gender">Gender:</string>
     <string name="action_share">Share</string>
+    <string name="you_shared_text">You Shared...</string>
 </resources>

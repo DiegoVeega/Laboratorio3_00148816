@@ -10,8 +10,8 @@
         android:id="@+id/tv_shareActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SHARE ACTIVITY"
-        android:textSize="40sp"
+        android:text="@string/you_shared_text"
+        android:textSize="@dimen/text_medium_size"
         android:padding="@dimen/content_gap"/>
 
     <TextView
