@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:text="@string/you_shared_text"
         android:textSize="@dimen/text_medium_size"
-        android:padding="@dimen/content_gap"/>
+        android:padding="@dimen/content_gap"
+        android:textColor="#666"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tv_shared"
@@ -21,5 +23,14 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/standar_option_textS"
         android:textColor="#666"/>
+
+    <TextView
+        android:id="@+id/JSON_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A JSON."
+        android:textStyle="bold"
+        android:textColor="#ff471a"
+        android:textSize="@dimen/text_small_size"/>
 
 </LinearLayout>
