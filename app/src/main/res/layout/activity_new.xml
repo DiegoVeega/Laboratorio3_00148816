@@ -26,7 +26,8 @@
             android:layout_alignBaseline="@+id/tv_user"
             android:layout_toRightOf="@+id/tv_user"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standar_option_textS"/>
+            android:textSize="@dimen/standar_option_textS"
+            android:padding="@dimen/content_gap"/>
 
     </RelativeLayout>
 
@@ -48,7 +49,8 @@
             android:layout_alignBaseline="@+id/tv_pass"
             android:layout_toRightOf="@+id/tv_pass"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standar_option_textS"/>
+            android:textSize="@dimen/standar_option_textS"
+            android:padding="@dimen/content_gap"/>
 
     </RelativeLayout>
 
@@ -70,7 +72,8 @@
             android:layout_alignBaseline="@+id/tv_email"
             android:layout_toRightOf="@+id/tv_email"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standar_option_textS"/>
+            android:textSize="@dimen/standar_option_textS"
+            android:padding="@dimen/content_gap"/>
 
     </RelativeLayout>
 
@@ -92,7 +95,8 @@
             android:layout_alignBaseline="@+id/tv_gender"
             android:layout_toRightOf="@+id/tv_gender"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/standar_option_textS"/>
+            android:textSize="@dimen/standar_option_textS"
+            android:padding="@dimen/content_gap"/>
 
     </RelativeLayout>
 
