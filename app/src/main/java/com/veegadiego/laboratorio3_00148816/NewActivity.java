@@ -43,7 +43,7 @@ public class NewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent m_intent2 = new Intent();
 
-                Aux_Text= "Username: "+mtv_user.getText()+"\n"+"Password: "+mtv_pass.getText()+"\n"+"E-mail: "+mtv_email.getText()+"\n"+"Gender: "+mtv_gender.getText();
+                Aux_Text= "{\n"+"\"Username\": "+"\""+mtv_user.getText()+"\",\n"+"\"Password\": "+"\""+mtv_pass.getText()+"\",\n"+"\"E-mail\": "+"\""+mtv_email.getText()+"\",\n"+"\"Gender\": "+"\""+mtv_gender.getText()+"\" \n}";
                 m_intent2.setAction(Intent.ACTION_SEND);
                 m_intent2.setType("text/plain");
                 m_intent2.putExtra(Intent.EXTRA_TEXT, Aux_Text);
