@@ -18,10 +18,10 @@ public class NewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
 
-        mtv_user =findViewById(R.id.tv_user);
-        mtv_pass=findViewById(R.id.tv_pass);
-        mtv_email=findViewById(R.id.tv_email);
-        mtv_gender=findViewById(R.id.tv_gender);
+        mtv_user =findViewById(R.id.et_user);
+        mtv_pass=findViewById(R.id.et_pass);
+        mtv_email=findViewById(R.id.et_email);
+        mtv_gender=findViewById(R.id.et_gender);
 
         mShareButton=findViewById(R.id.share_action);
 
